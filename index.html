@@ -46,7 +46,7 @@
 		<section class="slide">
 			<div>
 				<h1 class="title text dark">Мне задали этот вопрос
-					на&nbsp;8&nbsp;из&nbsp;20&nbsp;собеседований</h2>
+					на&nbsp;5&nbsp;из&nbsp;20&nbsp;собеседований</h2>
 			</div>
 		</section>
 
@@ -130,17 +130,19 @@
 
 		<!-- HTTPS -->
 		<section class="slide">
-
-			<!-- <img src="./images/hsts.webp" alt="hsts" width="60%" /> -->
+			<div class="center">
+				<h1 class="text title title-1 dark">По умолчанию браузер использует https</h1>
+			</div>
+		</section>
+		<section class="slide">
 			<div class="center">
 				<h1 class="text title title-1 dark">Список проверки HSTS</h1>
 				<img src="./images/hsts-1.png" alt="hsts" width="60%" />
 				<img src="./images/hsts-2.png" alt="hsts" width="60%" />
-				<p class="next text size-20 top-20">
+				<span class="next text size-20 top-20">
 					<span class="bold">HTTP Strict Transport Security</span>
-				</p>
+				</span>
 			</div>
-
 		</section>
 
 
@@ -191,7 +193,6 @@
 		</section>
 
 
-
 		<!-- ОТКРЫТИЕ СОКЕТА -->
 		<section class="slide">
 			<div>
@@ -211,7 +212,7 @@
 		<!-- РУКОПОЖАТИЕ -->
 		<section class="slide">
 			<div>
-				<h1 class="title text dark">Handshake SSL/TLS</h1>
+				<h1 class="title text dark">TCP 3-WAY Handshake</h1>
 			</div>
 		</section>
 		<section class="slide image-container">
@@ -245,48 +246,61 @@
 			<img class="full-w" src="./images/http-5.png" alt="handshake" />
 		</section>
 
+
+		<section class="slide">
+			<div class="center">
+				<h1 class="title text title-1 dark">HTTP Request</h1>
+				<img width="90%" src="./images/http-req.png" alt="handshake" />
+			</div>
+		</section>
+
+
 		<!-- REST -->
 		<section class="slide">
 			<div>
-				<h1 class="title text dark">REST</h1>
-				<ul>
-					<li class="next"><img width="70%" src="./images/rest.png" alt="websocket"
-							/></li>
-				</ul>
+				<h1 class="title text title-1 dark">REST</h1>
+				<img class="next" width="90%" src="./images/rest.png" alt="websocket" />
 			</div>
 		</section>
 
 		<!-- GET VS POST -->
 		<section class="slide">
 			<div>
-				<p class="title text dark">Сравнение методов GET и POST</p>
-				<ul>
-					<li class="next"><img width="90%" src="./images/get-post.png" alt="get vs
-							post" /></li>
-				</ul>
+				<h1 class="title text title-1 dark">GET и POST</h1>
+				<img width="85%" src="./images/get-post.png" alt="get vs post" />
 			</div>
 		</section>
 
 		<!-- ЗАПРОС -->
-		<section class="slide">
+		<section class="slide dark">
 			<div>
 				<img class="full-w" src="./images/network.png" alt="GET" />
 				<div class="spotlight next" style="--spotlight-radius: 0;
-					--spotlight-opacity: 0.2;
+					--spotlight-opacity: 0.6;
 					--spotlight-width: 381px;
 					--spotlight-height: 196px;
-					--spotlight-top: 35px;
-					--spotlight-left: -2px;"></div>
+					--spotlight-top: 9px;
+					--spotlight-left: -42px;">
+				</div>
 			</div>
 		</section>
+
+		<!-- ОТВЕТ -->
 		<section class="slide">
+			<div class="center">
+				<h1 class="title text title-1 dark">HTTP Response</h1>
+				<img width="90%" src="./images/http-res.png" alt="handshake" />
+			</div>
+		</section>
+
+		<section class="slide dark">
 			<div>
 				<img class="full-w" src="./images/network-1.png" alt="GET" />
 				<div class="next spotlight" style="--spotlight-radius: 0;
-					--spotlight-opacity: 0.2;
+					--spotlight-opacity: 0.6;
 					--spotlight-width: 1024px;
 					--spotlight-height: 29px;
-					--spotlight-top: -127px;">
+					--spotlight-top: -134px;">
 				</div>
 			</div>
 		</section>
@@ -295,15 +309,28 @@
 		<section class="slide">
 			<div>
 				<h1 class="title text dark">Коды ответа HTTP</h1>
-				<p class="text size-20">Информационные 100 - 199</p>
-				<p class="text size-20">Успешные 200 - 299</p>
-				<p class="text size-20">Перенаправления 300 - 399</p>
-				<p class="text size-20">Клиентские ошибки 400 - 499</p>
-				<p class="text size-20">Серверные ошибки 500 - 599</p>
+				<p class="text size-20">
+					Информационные 100 - 199<span class="next text size-32">☝️</span>
+				</p>
+				<p class="text size-20">
+					Успешные 200 - 299 <span class="next text size-28">👍</span>
+				</p>
+				<p class="text size-20">
+					Перенаправления 300 - 399 <span class="next text size-32">👉</span>
+				</p>
+				<p class="text size-20">
+					Клиентские ошибки 400 - 499 <span class="next text size-28">👎</span>
+				</p>
+				<p class="text size-20">
+					Серверные ошибки 500 - 599 <span class="next text size-32">🤷‍♀️</span>
+				</p>
 			</div>
 		</section>
 
 		<!-- ПОЛУЧЕНИЕ ДОКУМЕНТА ПО ПАКЕТАМ -->
+		<section class="slide image-container full-img">
+			<img class="full-w" src="./images/packages-0.png" alt="packages" />
+		</section>
 		<section class="slide image-container full-img">
 			<img class="full-w" src="./images/packages-1.png" alt="packages" />
 		</section>
@@ -327,7 +354,7 @@
 		</section>
 
 		<!-- ОТВЕТ В БРАУЗЕРЕ -->
-		<section class="slide">
+		<section class="slide dark">
 			<div>
 				<img class="full-w" src="./images/network-2.png" alt="GET" />
 			</div>
@@ -336,6 +363,33 @@
 		<!-- ОТВЕТ ДОКУМЕНТ -->
 		<section class="slide center image-container dark">
 			<img class="full-w" src="./images/code.png" alt="GET" />
+			<!-- doctype -->
+			<div class="next spotlight" style="--spotlight-radius: 0;
+				--spotlight-opacity: 0.4;
+				--spotlight-width: 1024px;
+				--spotlight-height: 20px;
+				--spotlight-top: -235px;">
+			</div>
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/code.png" alt="GET" />
+			<!-- head -->
+			<div class="spotlight" style="--spotlight-radius: 0;
+				--spotlight-opacity: 0.4;
+				--spotlight-width: 1024px;
+				--spotlight-height: 217px;
+				--spotlight-top: -107px;">
+			</div>
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/code.png" alt="GET" />
+			<!-- body -->
+			<div class="spotlight" style="--spotlight-radius: 0;
+				--spotlight-opacity: 0.4;
+				--spotlight-width: 1024px;
+				--spotlight-height: 217px;
+				--spotlight-top: 107px;">
+			</div>
 		</section>
 
 		<!-- РЕНДЕРИНГ КОМПОНЕНТ -->
@@ -344,98 +398,234 @@
 				<h1 class="title text title-1 yellow">Rendering Engine HTML</h1>
 
 				<img width="100%" src="./images/html-1.png" alt="html" />
+				<div class="next spotlight" style="--spotlight-radius: 0;
+					--spotlight-opacity: 0.4;
+					--spotlight-width: 1024px;
+					--spotlight-height: 29px;
+					--spotlight-top: -35px;">
+				</div>
 			</div>
 		</section>
-
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">Синтаксический анализ</h1>
-				<p>- это преобразование
-					документа в пригодную для чтения структура</p>
-			</div>
-		</section>
-
-
-		<!-- 20 -->
 		<section class="slide dark">
 			<div>
-				<h1 class="title text yellow">DOM</h1>
+				<h1 class="title text title-1 yellow">Rendering Engine HTML</h1>
+				<img width="100%" src="./images/html-1.png" alt="html" />
+				<div class="spotlight" style="--spotlight-radius: 0;
+					--spotlight-opacity: 0.4;
+					--spotlight-width: 1024px;
+					--spotlight-height: 29px;
+					--spotlight-top: 54px;">
+				</div>
+			</div>
+		</section>
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Rendering Engine HTML</h1>
+				<img width="100%" src="./images/html-1.png" alt="html" />
+				<div class="spotlight" style="--spotlight-radius: 0;
+					--spotlight-opacity: 0.4;
+					--spotlight-width: 1024px;
+					--spotlight-height: 29px;
+					--spotlight-top: 76px;">
+				</div>
+			</div>
+		</section>
+		<!-- Синтаксический анализ -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Синтаксический анализ</h1>
+				<p class="text yellow">- это преобразование
+					документа в пригодную для чтения структура
+				</p>
+			</div>
+		</section>
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Синтаксический анализ</h1>
+				<p class="text yellow">
+					состоит из двух этапов:
+					<div class="next text yellow">- лексического анализа (токенизации)</div>
+					<div class="next text yellow">- и построения дерева</div>
+				</p>
+			</div>
+		</section>
+		<!-- Лексический анализ -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Токенизация</h1>
+				<p class="text yellow">
+					&mdash; процесс, при котором входная последовательность символов
+					разбивается
+					на&nbsp;токены&nbsp;&mdash; открывающие и&nbsp;закрывающие теги, названия
+					и&nbsp;значения атрибутов
+				</p>
+			</div>
+		</section>
+
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/html-parser-1.png" alt="GET" />
+		</section>
+		<!-- DOM -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Построение дерева DOM</h1>
+				<p class="text yellow">
+					&mdash; это абстракция над текстом разметки, с&nbsp;помощью которой
+					браузер
+					может получать доступ к&nbsp;элементам документа и&nbsp;изменять его
+				</p>
+			</div>
+		</section>
+
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/html-parser-2.png" alt="GET" />
+		</section>
+
+		<section class="slide dark">
+			<div>
+				<h1 class="title title-1 text yellow">DOM</h1>
 
 				<div class="row">
-					<img width="45%" src="./images/html-2.png" alt="html" />
-					<img class="next" width="48%" src="./images/tree-2.png" alt="tree" />
+					<img width="50%" src="./images/dom-1.png" alt="html" />
+					<img class="next" width="50%" src="./images/dom-2.png" alt="tree" />
 				</div>
 			</div>
 		</section>
 
-		<!-- 21 -->
+		<!-- CSSOM -->
 		<section class="slide dark">
 			<div>
-				<h1 class="title text yellow">CSSOM</h1>
+				<h1 class="title title-1 text yellow">CSSOM</h1>
+				<img class="next full-w" src="./images/css-token.png" alt="GET" />
+			</div>
+		</section>
 
+		<section class="slide dark">
+			<div>
+				<h1 class="title title-1 text yellow">CSSOM</h1>
 				<div class="row">
-					<img width="45%" src="./images/css-1.png" alt="css" />
-					<img width="48%" src="./images/cssom-1.png" alt="tree" />
+					<img width="50%" src="./images/cssom-1.png" alt="css" />
+					<img class="next" width="50%" src="./images/cssom-2.png" alt="tree" />
+				</div>
+			</div>
+		</section>
+		<!-- СПЕЦИФИЧНОСТЬ -->
+
+		<section class="slide dark">
+			<div>
+				<h1 class="title title-1 text yellow">Специфичность CSS</h1>
+				<div class="row">
+					<img width="50%" src="./images/spec-css-1.png" alt="css" />
+					<img class="next" width="50%" src="./images/spec-css-2.png" alt="tree" />
 				</div>
 			</div>
 		</section>
 
-		<!-- 22 -->
+		<section class="slide dark">
+			<div class="center">
+				<h1 class="title title-1 text yellow">Калькулятор специфичности</h1>
+				<img width="40%" src="./images/qr-css-spec.png" alt="css" />
+			</div>
+		</section>
 		<section class="slide dark">
 			<div>
-				<h1 class="title text yellow">Специфичность css</h1>
-
-				<div class="row">
-					<img width="45%" src="./images/css-s.png" alt="css priority" />
-				</div>
+				<h1 class="title text title-1 yellow">Вес селекторов</h1>
+				<p class="text yellow size-28 regular next">1. !important</p>
+				<p class="text yellow size-28 regular next">2. style=""</p>
+				<p class="text yellow size-28 regular next">3. #id</p>
+				<p class="text yellow size-28 regular next">4. .class, [attribute],
+					:pseudoclass</p>
+				<p class="text yellow size-28 regular next">5. tag, :pseudoelement</p>
 			</div>
 		</section>
 
 		<section class="slide dark">
 			<div>
-				<h1 class="title text yellow">Специфичность css</h1>
-
-				<div class="row">
-					<img width="45%" src="./images/css-priority.png" alt="css priority" />
-				</div>
+				<h1 class="title text title-1 yellow">Система расчёта</h1>
 			</div>
 		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/css-calc-1.png" alt="css-calc" />
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/css-calc-2.png" alt="css-calc" />
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/css-calc-3.png" alt="css-calc" />
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/css-calc-4.png" alt="css-calc" />
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/css-calc-5.png" alt="css-calc" />
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/css-calc-6.png" alt="css-calc" />
+		</section>
 
-		<!-- 23 -->
+
+		<section class="slide dark">
+			<h1 class="title text title-1 yellow">Система расчёта</h1>
+			<table>
+				<tr>
+					<th scope="col" class="text yellow">Селектор</th>
+					<th class="text yellow">Вес</th>
+				</tr>
+				<tr>
+					<td class="text yellow">#block section > .list a</td>
+					<td class="text yellow">0.0.1.1.2</td>
+				</tr>
+				<tr>
+					<td class="text yellow">div#some</td>
+					<td class="text yellow">0.0.1.0.1</td>
+				</tr>
+				<tr>
+					<td class="text yellow">#some</td>
+					<td class="text yellow">0.0.1.0.0</td>
+				</tr>
+				<tr>
+					<td class="text yellow">* .list a</td>
+					<td class="text yellow">0.0.0.1.1</td>
+				</tr>
+				<tr>
+					<td class="text yellow">.class</td>
+					<td class="text yellow">0.0.0.1.0</td>
+				</tr>
+				<tr>
+					<td class="text yellow">section h1</td>
+					<td class="text yellow">0.0.0.0.2</td>
+				</tr>
+				<tr>
+					<td class="text yellow">section</td>
+					<td class="text yellow">0.0.0.0.1</td>
+				</tr>
+			</table>
+		</section>
+
+		<!-- ПРИОРИТЕТ ЗАГРУЗКИ JS  -->
+
 		<section class="slide dark">
 			<div>
-				<p class="title text yellow">Порядок загрузки скриптов</h1>
+				<h1 class="title text yellow">Порядок загрузки скриптов</h1>
 			</div>
 		</section>
 
-		<section class="slide image-container">
+		<!-- <section class="slide image-container">
 			<img class="full-w" src="./images/http-4.png" alt="handshake" />
-		</section>
-
+		</section> -->
 		<section class="slide dark">
-			<div>
-				<p class="title text yellow">Порядок загрузки скриптов</h1>
-				<ul>
-					<li class="next">
-						<img width="50%" src="./images/js.png" alt="js priority" />
-					</li>
-					<li class="next">
-						<img width="50%" src="./images/js-2.png" alt="js priority" />
-					</li>
-					<li class="next">
-						<img width="50%" src="./images/js-3.png" alt="js priority" />
-					</li>
-					<li class="next">
-						<img width="50%" src="./images/js-4.png" alt="js priority" />
-					</li>
-				</ul>
+			<div class="center">
+				<!-- <h1 class="title text title-1 yellow">Порядок загрузки скриптов</h1> -->
+				<img class="next" width="55%" src="./images/js-1.png" alt="js priority" />
+				<img class="next" width="55%" src="./images/js-2.png" alt="js priority" />
+				<img class="next" width="55%" src="./images/js-3.png" alt="js priority" />
+				<img class="next" width="55%" src="./images/js-4.png" alt="js priority" />
 			</div>
 		</section>
-
 		<!-- 24 -->
-		<section class="slide dark">
+		<!-- <section class="slide dark">
 			<div>
-				<p class="title text yellow">Как происходит загрузка</h1>
+				<h1 class="title text yellow">Как происходит загрузка</h1>
 				<ul>
 					<li class="next">
 						Networking Component -> JavaScript Interpreter
@@ -457,75 +647,204 @@
 					</li>
 				</ul>
 			</div>
-		</section>
-
+		</section> -->
 		<!-- 25 -->
 		<section class="slide dark">
 			<div>
-				<p class="title text yellow">приоритет загрузки ресурсов</h1>
-				<ul>
-					<li class="next">
-						мета-тег dns-prefetch
-					</li>
-					<li class="next">
-						мета-тег prefetch
-					</li>
-					<li class="next">
-						мета-тег preload
-					</li>
-					<li class="next">
-						мета-тег preconnect
-					</li>
-				</ul>
+				<h1 class="title title-1 text yellow">Приоритет загрузки ресурсов</h1>
+				<img class="next" width="100%" src="./images/priority-1.png" alt="js
+					priority" />
 			</div>
 		</section>
-
-		<!-- 26 -->
-		<!-- 27 -->
-		<!-- 28 -->
-		<!-- 29 -->
-		<!-- 30 -->
-		<!-- 31 -->
-		<!-- 32 -->
-		<!-- 33 -->
-		<!-- 34 -->
-		<!-- 12 -->
-
-		<!-- <section class="slide">
-		<div>
-			<h1 class="title text dark">WebSocket</h1>
-
-			<ul>
-				<li class="next"><img width="70%" src="./images/websocket.png" alt="websocket"  /></li>
-			</ul>
-		</div>
-    </section> -->
-		<section class="slide title">
-			<div>
-				<h1 class="title text dark">Мне задали этот вопрос
-					на&nbsp;8&nbsp;из&nbsp;20&nbsp;собеседований</h2>
-			</div>
-			<div class="text dark">
-				<p>Екатерина Танькова, разработчик интерфейсрв</p>
-			</div>
-			<img src="./images/address.png" alt="address" />
-			<ul>
-				<li class="next">Это URL или поисковый запрос?</li>
-			</ul>
-		</section>
-
-
 		<section class="slide dark">
-
+			<div>
+				<h1 class="title title-1 text yellow">Приоритет загрузки ресурсов</h1>
+				<img width="100%" src="./images/priority-2.png" alt="js
+					priority" />
+			</div>
+		</section>
+		<section class="slide dark">
+			<div>
+				<h1 class="title title-1 text yellow">Приоритет загрузки ресурсов</h1>
+				<img width="100%" src="./images/priority-3.png" alt="js
+					priority" />
+			</div>
+		</section>
+		<section class="slide dark">
+			<div>
+				<h1 class="title title-1 text yellow">Приоритет загрузки ресурсов</h1>
+				<img width="100%" src="./images/priority-4.png" alt="js
+					priority" />
+			</div>
+		</section>
+		<section class="slide dark">
+			<div>
+				<h1 class="title title-1 text yellow">Приоритет загрузки ресурсов</h1>
+				<img width="100%" src="./images/priority-5.png" alt="js
+					priority" />
+			</div>
+		</section>
+		<!-- Дерево рендеринга  -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Дерево рендеринга</h1>
+				<p class="text yellow">Деревья, построенные на этапе парсинга (DOM,
+					CSSOM),
+					объединяются в дерево рендеринга.</p>
+			</div>
+		</section>
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Дерево рендеринга</h1>
+				<div class="row">
+					<img class="next" width="45%" src="./images/dom-2.png" alt="tree" />
+					<img class="next" width="48%" src="./images/cssom-2.png" alt="tree" />
+				</div>
+			</div>
 		</section>
 
-		<footer class="badge">
-			<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-		</footer>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/tree.png" alt="css-calc" />
+		</section>
+		<!-- Этап компоновки  -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Этап компоновки </h1>
+				<p class="text yellow size-28">
+					Дерево рендеринга содержит информацию о том, какие узлы отображаются
+					вместе
+					с их вычисляемыми стилями, но не о размерах или местоположении узлов.
+				</p>
+				<p class="text yellow size-28">Поэтому необходимо рассчитать точное
+					положение
+					узлов
+					в
+					области просмотра устройства — внутри окна браузера — и их размер</p>
+			</div>
+		</section>
 
-		<div class="progress"></div>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/layout.png" alt="css-calc" />
+		</section>
+		<!--PAINT -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Этап раскрашивания </h1>
+				<p class="text yellow size-28">
+					Когда браузер решит, какие узлы должны быть видны, и рассчитает их
+					положение в окне просмотра, наступит время раскрасить их (отобразить
+					пиксели) на экране.
+				</p>
+				<p class="text yellow size-28">Данный этап также называют растеризацией,
+					когда
+					браузер преобразует каждое поле, вычисленное на этапе компоновки, в
+					фактические пиксели на экране.</p>
+			</div>
+		</section>
 
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/paint.png" alt="css-calc" />
+		</section>
+		<!--СЛОИ И КОМПОЗИТИНГ -->
+		<section class="slide dark">
+			<div>
+				<h1 class="title text title-1 yellow">Композитинг</h1>
+				<p class="text yellow size-28">
+					Композитинг – техника разделения частей страницы на слои, раскрашивания
+					их
+					по отдельности и компоновки в виде страницы в отдельном потоке –
+					композ-потоке.
+				</p>
+				<p class="text yellow size-28">Если разделы документа находятся на разных
+					слоях,
+					перекрывая друг друга, композитинг необходим, чтобы убедиться, что они
+					нарисованы на экране в правильном порядке и содержимое отображено
+					правильно.</p>
+			</div>
+		</section>
+		<section class="slide center image-container dark">
+			<img class="full-w" src="./images/composite.png" alt="css-calc" />
+		</section>
+		<!-- РЕЗУЛЬТАТ -->
+
+		<section class="slide center image-container" style="padding:0; margin:0;">
+			<img class="full-w" style="transform: translateY(-1px);"
+				src="./images/shchool.png" alt="css-calc" />
+		</section>
+		<!-- ИТОГИ -->
+
+		<!-- КОНЕЦ -->
+		<section class="slide dark end">
+			<div class="center">
+				<h1 class="title text">Конец</h1>
+			</div>
+		</section>
+
+		<!-- ИСТОЧНИКИ -->
+		<section class="slide dark library">
+			<div class="center">
+				<h1 class="title text">Материалы</h1>
+
+				<!-- <a class="text size-20" href="https://habr.com/ru/company/kts/blog/678034/">Как
+					работают браузеры. Часть 2</a>
+				<a class="text size-20" href="https://habr.com/ru/company/kts/blog/683240/">Как
+					работают браузеры. Часть 3</a> -->
+				<div style="display: flex; flex-direction: column; align-items:
+					flex-start;">
+					<a class="text size-20"
+						href="https://habr.com/ru/company/kts/blog/669784/">habr / Как
+						работают браузеры</a>
+					<a class="text size-20" href="https://doka.guide/js/dom/">doka / На чём
+						стоят три
+						слона, на которых держится
+						веб?</a>
+					<a class="text size-20" href="https://developer.mozilla.org/en-US/">developer.mozilla.org</a>
+					<a class="text size-20" href="https://learn.javascript.ru/">learn.javascript.ru</a>
+					<a class="text size-20"
+						href="https://htmlacademy.ru/blog/articles/brauzer-google">htmlacademy /
+						Что происходит
+						в браузере</a>
+					<a class="text size-20"
+						href="https://www.youtube.com/watch?v=__o3EHC9nZQ&ab_channel=FrontendChannel">WWW-аппликация
+						/ Никита
+						Дубко </a>
+					<a class="text size-20" href=""></a>
+					<a class="text size-20" href=""></a></div>
+			</div>
+		</section>
+
+		<section class="slide dark thanks">
+			<div class="center">
+				<h1 class="title text">Спасибо!</h1>
+				<p class="text size-18 regular">Екатерина Танькова</p>
+				<p class="text size-16 regular">Разработчик интерфейсов</p>
+				<p class="text size-16 regular" style="margin-top: 10px;">✉️
+					eitnkv@yandex-team.ru</p>
+				<p class="text size-16 regular" style="display: flex; align-items: center;
+					width: 100px; justify-content: space-between;"><svg
+						height="19" aria-hidden="true"
+						viewBox="0 0 16 16" version="1.1" width="19" data-view-component="true"
+						class="octicon octicon-mark-github v-align-middle">
+						<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47
+							7.59.4.07.55-.17.55-.38
+							0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+							1.08.58 1.23.82.72 1.21 1.87.87
+							2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+							0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18
+							1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16
+							1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65
+							3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+							8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+					</svg>TankovaE</p>
+			</div>
+		</section>
+		<section class="slide dark library">
+			<div class="center">
+				<h1 class="title text">Слайды здесь</h1>
+				<img width="200"
+					src="./images/qr-slides.png" alt="css-calc" />
+			</div>
+		</section>
 		<script src="shower/shower.js"></script>
-		<!-- Copyright © 2022 Yours Truly, Famous Inc. -->
 	</body>
 </html>
