@@ -1,373 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>What happens in the browser</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap"
-			rel="stylesheet">
-		<link rel="stylesheet" href="shower/themes/material/styles/styles.css">
-		<link rel="stylesheet" href="./styles.css">
-		<style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
-	</head>
-	<body class="shower list gird">
-		<header class="caption">
-			<h1>Что происходит в&nbsp;браузере, после того, как мы&nbsp;ввели адрес
-				в&nbsp;адресную строку 🌐</h1>
-			<p>Екатерина Танькова,
-				<a href="http://yandex.ru/">Яндекс</a>
-			</p>
-		</header>
-		<!-- 1 -->
-		<section class="slide">
-			<div>
-				<img src="./images/ya-logo.svg" alt="Яндекс" width="150px" />
-				<h1 class="title text dark">Что происходит в&nbsp;браузере, после того, как
-					мы&nbsp;ввели адрес в&nbsp;адресную строку</h2>
-				<div class="text dark">
-					<p>Екатерина Танькова, разработчик интерфейсов</p>
-				</div>
-			</div>
-		</section>
 
-		<!-- 2 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">Мне задали этот вопрос
-					на&nbsp;8&nbsp;из&nbsp;20&nbsp;собеседований</h2>
-			</div>
-		</section>
+<head>
+	<meta charset="UTF-8">
+	<link rel="preload" href="https://thecode.media/wp-content/themes/thecode_refresh/assets/fonts/Steinbeck.woff2"
+		crossorigin />
+	<link rel="preload"
+		href="https://thecode.media/wp-content/themes/thecode_refresh/assets/fonts/Yandex-Sans-Text-Regular.woff2"
+		as="font" type="font/woff2" crossorigin />
+	<title>Журнал «Код» программирование без снобизма</title>
+	<meta name="description" content="Статьи и видео о том, как взломать жизненные проблемы с помощью технологий." />
+	<meta property="og:url" content="https://thecode.media/" />
+	<meta property="og:site_name" content="Журнал «Код» программирование без снобизма" />
+	<link rel='stylesheet' id='classic-theme-styles-css'
+		href='https://thecode.media/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
+	<style id='global-styles-inline-css' type='text/css'>
+		body .is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+	</style>
+	<link rel="icon" href="https://thecode.media/wp-content/uploads/2021/07/cropped-512x512-1-192x192.png"
+		sizes="192x192" />
+	<script async defer>window.yaContextCb = window.yaContextCb || []</script>
+</head>
 
-		<!-- 3 -->
-		<section class="slide">
-			<h1 class="title text dark">Компоненты браузера</h1>
-			<ul>
-				<li class="next"><img src="./images/broser-сomponents.jpeg" alt="browser
-						components" /></li>
-			</ul>
-		</section>
+<body class="page">
+	<header class="header">
+		<div class="logo">
+			<a class="heading-logo__pr"
+				href="https://practicum.yandex.ru/?utm_source=pr&utm_medium=media&utm_campaign=pr_media_main_kod&utm_content=header"
+				target="_blank">журнал <br> Яндекс Практикума</a>
+		</div>
+	</header>
+	<main class="main">
+		<ul class="articles">
+			<li class="'article">
+				<img src="https://thecode.media/wp-content/uploads/2023/05/img_5362-720x504.png" />
+				<p class="title">Учим нейросеть узнавать людей</p>
+				<p class="description">В пропускных системах всё работает именно так</p>
+			</li>
+		</ul>
+	</main>
+</body>
 
-		<!-- 4 -->
-		<section class="slide">
-			<img class="full-w" src="./images/address.png" alt="address" />
-			<ul>
-				<li class="next">Это URL или поисковый запрос?</li>
-				<li class="next"><img class="full-w" src="./images/address-2.png"
-						alt="address" /></li>
-			</ul>
-		</section>
-
-		<!-- 5 -->
-		<section class="slide">
-			<h1 class="title text dark">Какие бывают протоколы</h1>
-			<p class="text size-20">IP — Internet Protocol</p>
-			<p class="text size-20">TCP/IP — Transmission Control Protocol/Internet
-				Protocol</p>
-			<p class="text size-20">UDP — User Datagram Protocol</p>
-			<p class="text size-20">FTP — File Transfer Protocol</p>
-			<p class="text size-20">DNS</p>
-			<p class="text size-20">HTTP — HyperText Transfer Protocol</p>
-			<p class="text size-20">NTP — Network Time Protocol</p>
-			<p class="text size-20">SSH — Secure SHell</p>
-		</section>
-
-		<!-- 6 -->
-		<section class="slide">
-			<h1 class="title text dark">Список проверки HSTS</h1>
-			<img src="./images/hsts.webp" alt="hsts" width="60%" />
-		</section>
-
-		<!-- 7 -->
-		<section class="slide">
-			<div>
-				<img class="full-w" src="./images/address-3.png" alt="address" />
-				<ul>
-					<li class="next"><h1 class="title text dark">User Interface -> Browser
-							Engine</h1></li>
-					<li class="next"><h1 class="title text dark">63.245.215.20</h1></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 8 -->
-		<section class="slide">
-			<div>
-				<h2 class="title text dark">Процесс получения IP адреса называется DNS
-					lookup</h1>
-				<img width="70%" src="./images/dns-lookup.png" alt="dns lookup" />
-			</div>
-		</section>
-
-		<!-- 9 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">TCP/IP Открытие сокета</h1>
-				<p>TCP&nbsp;&mdash; это набор правил, который описывает способы соединения
-					между устройствами, форматы отправки запросов, действия в&nbsp;случае
-					потери данных и&nbsp;так далее.</p>
-			</div>
-		</section>
-
-		<!-- 10 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">Handshake SSL/TLS</h1>
-				<ul>
-					<!-- <img width="70%" src="./images/handshake.png" alt="handshake"  /> -->
-					<li class="next"><img width="70%" src="./images/handshake-1.png"
-							alt="handshake" /></li>
-					<li class="next"><img width="70%" src="./images/handshake-2.png"
-							alt="handshake" /></li>
-					<li class="next"><img width="70%" src="./images/handshake-3.png"
-							alt="handshake" /></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 11 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">Отправка запроса HTTP</h1>
-
-				<ul>
-					<li class="next">Browser Engine -> Rendering Engine</li>
-					<li class="next">Rendering Engine -> Network</li>
-					<li class="next">Network -> GET</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 12 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">WebSocket</h1>
-
-				<ul>
-					<li class="next"><img width="70%" src="./images/websocket.png"
-							alt="websocket" /></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 13 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">REST</h1>
-
-				<ul>
-					<li class="next"><img width="70%" src="./images/rest.png" alt="websocket"
-							/></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 14 -->
-		<section class="slide">
-			<div>
-				<p class="title text dark">Сравнение методов GET и POST</p>
-				<ul>
-					<li class="next"><img width="90%" src="./images/get-post.png" alt="get vs
-							post" /></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 15 -->
-		<section class="slide">
-			<div>
-				<p class="title text dark">Запрос</p>
-				<ul>
-					<li class="next"><img width="60%" src="./images/get.png" alt="GET" /></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 16 -->
-		<section class="slide">
-			<div>
-				<p class="title text dark">Ответ сервера</p>
-				<!-- <ul>
-				<li class="next"><img width="60%" src="./images/get.png" alt="GET"  /></li>
-			</ul> -->
-			</div>
-		</section>
-
-		<!-- 17 -->
-		<section class="slide">
-			<div>
-				<h1 class="title text dark">Коды ответа HTTP</h1>
-				<p class="text size-20">Информационные 100 - 199</p>
-				<p class="text size-20">Успешные 200 - 299</p>
-				<p class="text size-20">Перенаправления 300 - 399</p>
-				<p class="text size-20">Клиентские ошибки 400 - 499</p>
-				<p class="text size-20">Серверные ошибки 500 - 599</p>
-			</div>
-		</section>
-
-		<!-- 18 -->
-		<section class="slide">
-			<div>
-				<!-- <h1 class="title text dark">Вкладка network</h1> -->
-				<img width="100%" src="./images/network.png" alt="network" />
-			</div>
-		</section>
-
-		<!-- 19 -->
-		<section class="slide dark">
-			<div>
-				<h1 class="title text yellow">Rendering Engine HTML</h1>
-
-				<img width="60%" src="./images/html-1.png" alt="html" />
-			</div>
-		</section>
-
-		<!-- 20 -->
-		<section class="slide dark">
-			<div>
-				<h1 class="title text yellow">DOM</h1>
-
-				<div class="row">
-					<img width="45%" src="./images/html-2.png" alt="html" />
-					<img width="48%" src="./images/tree-2.png" alt="tree" />
-				</div>
-			</div>
-		</section>
-
-		<!-- 21 -->
-		<section class="slide dark">
-			<div>
-				<h1 class="title text yellow">CSSOM</h1>
-
-				<div class="row">
-					<img width="45%" src="./images/css-1.png" alt="css" />
-					<img width="48%" src="./images/cssom-1.png" alt="tree" />
-				</div>
-			</div>
-		</section>
-
-		<!-- 22 -->
-		<section class="slide dark">
-			<div>
-				<h1 class="title text yellow">Специфичность css</h1>
-
-				<div class="row">
-					<img width="45%" src="./images/css-priority.png" alt="css priority" />
-				</div>
-			</div>
-		</section>
-
-		<!-- 23 -->
-		<section class="slide dark">
-			<div>
-				<p class="title text yellow">Порядок загрузки скриптов</h1>
-				<ul>
-					<li class="next">
-						<img width="50%" src="./images/js.png" alt="js priority" />
-					</li>
-					<li class="next">
-						<img width="50%" src="./images/js-2.png" alt="js priority" />
-					</li>
-					<li class="next">
-						<img width="50%" src="./images/js-3.png" alt="js priority" />
-					</li>
-					<li class="next">
-						<img width="50%" src="./images/js-4.png" alt="js priority" />
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 24 -->
-		<section class="slide dark">
-			<div>
-				<p class="title text yellow">Как происходит загрузка</h1>
-				<ul>
-					<li class="next">
-						Networking Component -> JavaScript Interpreter
-					</li>
-					<li class="next">
-						JavaScript Interpreter преобразует байты в исполняемый код
-					</li>
-					<li class="next">
-						байты -> символы -> токены -> Abstract Syntax Tree (evaluating)
-					</li>
-					<li class="next">
-						-> компилятор
-					</li>
-					<li class="next">
-						-> компиляция
-					</li>
-					<li class="next">
-						-> исполнение
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 25 -->
-		<section class="slide dark">
-			<div>
-				<p class="title text yellow">приоритет загрузки ресурсов</h1>
-				<ul>
-					<li class="next">
-						мета-тег dns-prefetch
-					</li>
-					<li class="next">
-						мета-тег prefetch
-					</li>
-					<li class="next">
-						мета-тег preload
-					</li>
-					<li class="next">
-						мета-тег preconnect
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 26 -->
-		<!-- 27 -->
-		<!-- 28 -->
-		<!-- 29 -->
-		<!-- 30 -->
-		<!-- 31 -->
-		<!-- 32 -->
-		<!-- 33 -->
-		<!-- 34 -->
-
-		<section class="slide title">
-			<div>
-				<h1 class="title text dark">Мне задали этот вопрос
-					на&nbsp;8&nbsp;из&nbsp;20&nbsp;собеседований</h2>
-			</div>
-			<div class="text dark">
-				<p>Екатерина Танькова, разработчик интерфейсрв</p>
-			</div>
-			<img class="full-w" src="./images/address.png" alt="address" />
-			<ul>
-				<li class="next">Это URL или поисковый запрос?</li>
-			</ul>
-		</section>
-
-
-		<section class="slide dark">
-
-		</section>
-
-		<footer class="badge">
-			<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-		</footer>
-
-		<div class="progress"></div>
-
-		<script src="shower/shower.js"></script>
-		<!-- Copyright © 2022 Yours Truly, Famous Inc. -->
-	</body>
 </html>
