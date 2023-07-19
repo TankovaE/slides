@@ -232,14 +232,6 @@
 
 
 	<!-- СОКЕТ -->
-	<section class="slide">
-		<div class="text dark">
-			<h1 class="title text dark">TCP</h1>
-			<p class="next">TCP&nbsp;&mdash; это набор правил, который описывает способы
-				соединения между устройствами, форматы отправки запросов, действия
-				в&nbsp;случае потери данных и&nbsp;так далее.</p>
-		</div>
-	</section>
 	<section class="slide image-container">
 		<img class="full-w" src="./images/socket-2.png" alt="dns" />
 	</section>
@@ -252,11 +244,20 @@
 				и&nbsp;номера порта</h1>
 		</div>
 	</section>
-	<section class="slide image-container">
-		<img class="full-w" src="./images/socket-1.png" alt="dns" />
+
+	<section class="slide">
+		<div class="text dark">
+			<h1 class="title text dark">TCP</h1>
+			<p class="next">TCP&nbsp;&mdash; это набор правил, который описывает способы
+				соединения между устройствами, форматы отправки запросов, действия
+				в&nbsp;случае потери данных и&nbsp;так далее.</p>
+		</div>
 	</section>
 
 	<!-- ОТКРЫТИЕ СОКЕТА -->
+	<section class="slide image-container">
+		<img class="full-w" src="./images/socket-1.png" alt="dns" />
+	</section>
 	<section class="slide">
 		<div class="text dark">
 			<h1 class="title text dark">TCP/IP Открытие сокета</h1>
@@ -265,6 +266,7 @@
 			</p>
 		</div>
 	</section>
+
 
 	<!-- РУКОПОЖАТИЕ -->
 
@@ -587,18 +589,6 @@
 		<img class="full-w" src="./images/html-parser-2.png" alt="GET" />
 	</section>
 
-	<section class="slide dark">
-		<div class="text yellow">
-			<h1 class="title text title-1 yellow">document</h1>
-			<p class="next text"><span class="bold">loading </span>— документ только начал формироваться</p>
-			<p class="next text"><span class="bold">DOMContentLoaded </span>— браузер полностью загрузил HTML,
-				было построено DOM-дерево</p>
-			<p class="next text"><span class="bold">load </span>— браузер загрузил HTML и внешние ресурсы</p>
-			<!-- <p class="next text size-20"><span class="bold">beforeunload/unload </span>— пользователь покидает страницу
-			</p> -->
-		</div>
-	</section>
-
 	<!-- <section class="slide dark">
 		<div>
 			<h1 class="title title-1 text yellow">Пример построения DOM</h1>
@@ -670,14 +660,28 @@
 		</div>
 	</section>
 
+	<section class="slide dark">
+		<div class="text yellow">
+			<h1 class="title text title-1 yellow">document</h1>
+			<p class="next text"><span class="bold">loading </span>— документ только начал формироваться</p>
+			<p class="next text"><span class="bold">interactive </span>— браузер полностью загрузил HTML,
+				было построено DOM-дерево (событие DOMContentLoaded)</p>
+			<p class="next text"><span class="bold">complete </span>— браузер загрузил HTML и внешние ресурсы (событие
+				load)</p>
+			<!-- <p class="next text size-20"><span class="bold">beforeunload/unload </span>— пользователь покидает страницу
+			</p> -->
+		</div>
+	</section>
 
-	<section class="slide dark image-container">
+
+
+	<!-- <section class="slide dark image-container">
 		<div class="relative" style="margin-top: 30px;">
 			<div class="row" style="gap: 16px;">
 				<img width="50%" src="./images/dom/dom-html-7.png" alt="html" />
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<section class="slide dark">
@@ -740,17 +744,17 @@
 
 	<section class="slide dark">
 		<div>
-			<h1 class="title text title-1 yellow" style="font-size: 40px; margin-bottom: 20px">defer</h1>
-			<p class="text yellow next">
+			<h1 class="title text title-1 yellow" style="font-size: 32px; margin-bottom: 16px">defer</h1>
+			<p class="text yellow next" style="font-size: 30px;">
 				- не блокировать парсинг и отрисовку страницы
 				<br />
-				- ждать событие DOMContentLoaded
+				- выполнить, когда документ обработан, но перед событием DOMContentLoaded
 			</p>
-			<h1 class="title text title-1 yellow next" style="font-size: 40px; margin-bottom: 20px;">async</h1>
-			<p class="text yellow next">
+			<h1 class="title text title-1 yellow next" style="font-size: 32px; margin-bottom: 16px;">async</h1>
+			<p class="text yellow next" style="font-size: 30px;">
 				- не блокировать парсинг и отрисовку страницы
 				<br />
-				- не ждать событие DOMContentLoaded
+				- не ждать готовности документа
 			</p>
 		</div>
 	</section>
@@ -794,6 +798,11 @@
 	<!-- CSSOM -->
 	<section class="slide dark">
 		<div>
+			<h1 class="title title-1 text yellow">Parsing CSS</h1>
+		</div>
+	</section>
+	<section class="slide dark">
+		<div>
 			<img class="" width="100%" src="./images/html-1.png" alt="html" />
 			<div class="next spotlight" style="--spotlight-radius: 0;
 					--spotlight-opacity: 0.5;
@@ -806,7 +815,7 @@
 	<section class="slide dark">
 		<div>
 			<h1 class="title title-1 text yellow">Parsing CSS</h1>
-			<p class="next text yellow">Результат парсинга CSS-кода — CSSOM</h1>
+			<p class="text yellow">Результат парсинга CSS-кода — CSSOM</h1>
 				<!-- <img class="next full-w" src="./images/css-token.png" alt="GET" /> -->
 		</div>
 	</section>
@@ -933,7 +942,7 @@
 		<img class="full-w" src="./images/css-calc-9.png" alt="css-calc" />
 	</section>
 
-	<section class="slide dark">
+	<!-- <section class="slide dark">
 		<div>
 			<h1 class="title title-1 text yellow">Специфичность CSS</h1>
 			<div class="row" style="align-items: flex-start;">
@@ -941,7 +950,7 @@
 				<img class="next" width="35%" src="./images/spec-css-2.png" alt="tree" />
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- <section class="slide dark">
 			<div class="center">
@@ -950,7 +959,7 @@
 			</div>
 		</section> -->
 
-	<section class="slide dark">
+	<!-- <section class="slide dark">
 		<div>
 			<h1 class="title title-1 text yellow">Построение CSSOM</h1>
 			<div class="row next">
@@ -958,7 +967,7 @@
 				<img class="next" width="50%" src="./images/cssom-2.png" alt="tree" />
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<!-- <section class="slide dark">
@@ -1122,6 +1131,29 @@
 	<!-- ИТОГИ -->
 
 
+	<section class="slide library">
+		<div class="center">
+			<h1 class="title text size-32">Все по пунктам</h1>
+			<div style="display: flex; flex-direction: column; align-items:
+					flex-start;">
+				<p class="text size-20 next">1. Поисковой запрос</p>
+				<p class="text size-20 next">2. DNS lookup - поиск IP адреса по доменному имени</p>
+				<p class="text size-20 next">3. Подключение к серверу с помощью TCP</p>
+				<p class="text size-20 next">4. GET запрос</p>
+				<p class="text size-20 next">5. Парсинг HTML и CSS, получение внешних ресурсов</p>
+				<p class="text size-20 next">6. Отрисовка странички в несколько этапов: rendering tree, </br>layout,
+					paint,
+					composite
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide library">
+		<div class="center">
+			<h1 class="title text" style="margin-top: 180px;">Зачем мне все это?</h1>
+		</div>
+	</section>
 
 	<!-- КОНЕЦ -->
 	<section class="slide end">
@@ -1164,7 +1196,7 @@
 
 	<section class="slide thanks">
 		<div class="center">
-			<h1 class="title text">Спасибо!</h1>
+			<h1 class="title text size-28">Спасибо за внимание!</h1>
 			<p class="text size-18 regular">Екатерина Танькова</p>
 			<p class="text size-16 regular">Разработчик интерфейсов</p>
 			<p class="text size-16 regular" style="margin-top: 10px;">✉️
@@ -1184,12 +1216,7 @@
 							3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
 							8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
 				</svg>TankovaE</p>
-		</div>
-	</section>
-	<section class="slide library">
-		<div class="center">
-			<h1 class="title text">Слайды здесь</h1>
-			<img width="200" src="./images/qr-slides.png" alt="css-calc" />
+			<img width="130" style="margin-top: 12px;" src="./images/qr-code.png" alt="css-calc" />
 		</div>
 	</section>
 	<script src="shower/shower.js"></script>
